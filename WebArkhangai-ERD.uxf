@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>45</x>
+      <y>45</y>
+      <w>90</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>state</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>18</x>
+      <y>99</y>
+      <w>144</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>users
+--
+-id PK
+--
+-first_name VARCHAR
+--
+-last_name VARCHAR
+--
+-email VARCHAR
+--
+-phone INT
+--
+-password VARCHAR
+--
+-image VARCHAR
+--
+-token VARCHAR
+--
+-recover ENUM(0,1)
+--
+-permission ENUM(0,1)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>18</x>
+      <y>378</y>
+      <w>144</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>support
+--
+-id PK
+--
+-name VARCHAR
+--
+-email VARCHAR
+--
+-phone INT
+--
+-body TEXT
+--
+-datetime DATETIME</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>198</x>
+      <y>351</y>
+      <w>135</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>news
+--
+-id PK
+--
+-cat_id FK
+--
+-title VARCHAR
+--
+-uid FK
+--
+-body TEXT
+--
+-image VARCHAR
+--
+-view INT
+--
+-datetime DATETIME</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>351</x>
+      <y>351</y>
+      <w>117</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>category
+--
+-id PK
+--
+-name VARCHAR</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>198</x>
+      <y>216</y>
+      <w>135</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>vote_question
+--
+-id PK
+--
+-title VARCHAR
+--
+-uid FK
+--
+-end_time VARCHAR</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>351</x>
+      <y>432</y>
+      <w>144</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>web_visited
+--
+-id PK
+--
+-ip_address VARCHAR
+--
+-counter INT
+--
+-datetime DATETIME</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>198</x>
+      <y>18</y>
+      <w>135</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>tender
+--
+-id PK
+--
+-torol_id FK
+--
+-title VARCHAR
+--
+-body TEXT
+--
+-uid FK
+--
+-file VARCHAR
+--
+-view INT
+--
+-datetime DATETIME</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>351</x>
+      <y>72</y>
+      <w>117</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>tender_torol
+--
+-id
+--
+-name VARCHAR</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>351</x>
+      <y>216</y>
+      <w>117</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>vote_answer
+--
+-id PK
+--
+-ques_id FK
+--
+-answer VARCHAR</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>99</y>
+      <w>45</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>243</y>
+      <w>45</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>378</y>
+      <w>45</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>495</x>
+      <y>216</y>
+      <w>90</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>vote
+--
+-id
+--
+-ques_id
+--
+-answer_id
+--
+-ip_address</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>603</x>
+      <y>54</y>
+      <w>126</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>hunii_noots
+--
+-id PK
+--
+-title VARCHAR
+--
+-body TEXT</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>603</x>
+      <y>171</y>
+      <w>126</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>tosow_sankhuu
+--
+-id PK
+--
+-title VARCHAR
+--
+-body TEXT</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>603</x>
+      <y>288</y>
+      <w>126</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>uil_ajillagaa
+--
+-id PK
+--
+-title VARCHAR
+--
+-body TEXT</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>603</x>
+      <y>405</y>
+      <w>117</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>permission
+--
+-id PK
+--
+-uid FK
+--
+-medee ENUM
+--
+-tender ENUM
+--
+-support ENUM
+--
+-q_and_a ENUM
+--
+-youtube ENUM
+--
+-medeelel ENUM</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

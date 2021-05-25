@@ -1,0 +1,19 @@
+@media screen and (max-width: 500px){
+	.searchbar{
+		display: none;
+	}
+	#mobile_menu{
+		list-style-type: none;
+		display: block;
+	}
+	.top_menu{
+		display: none;
+	}
+	#mobile_menu li a{
+		text-decoration: none;
+		color: #fff;
+	}
+	#mobile_menu li:hover #mobile_menu .sub_menu{
+		display: block;
+	}
+}
